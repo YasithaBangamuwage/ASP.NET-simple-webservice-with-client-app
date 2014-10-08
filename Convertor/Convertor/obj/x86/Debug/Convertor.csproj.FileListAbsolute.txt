@@ -1,0 +1,10 @@
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\bin\Debug\Convertor.exe.config
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\bin\Debug\Convertor.exe
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\bin\Debug\Convertor.pdb
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\obj\x86\Debug\Convertor.Form1.resources
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\obj\x86\Debug\Convertor.Properties.Resources.resources
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\obj\x86\Debug\Convertor.exe
+C:\Users\YAS\Desktop\workspace\Convertor\Convertor\obj\x86\Debug\Convertor.pdb

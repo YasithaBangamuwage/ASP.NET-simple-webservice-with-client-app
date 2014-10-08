@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="fToc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="f" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fTocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fTocResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fTok">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="f" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fTokResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fTokResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cTof">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="c" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cTofResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cTofResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cTok">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="c" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cTokResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cTokResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kTof">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="k" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kTofResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kTofResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kToc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="k" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="kTocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="kTocResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="fTocSoapIn">
+    <wsdl:part name="parameters" element="tns:fToc" />
+  </wsdl:message>
+  <wsdl:message name="fTocSoapOut">
+    <wsdl:part name="parameters" element="tns:fTocResponse" />
+  </wsdl:message>
+  <wsdl:message name="fTokSoapIn">
+    <wsdl:part name="parameters" element="tns:fTok" />
+  </wsdl:message>
+  <wsdl:message name="fTokSoapOut">
+    <wsdl:part name="parameters" element="tns:fTokResponse" />
+  </wsdl:message>
+  <wsdl:message name="cTofSoapIn">
+    <wsdl:part name="parameters" element="tns:cTof" />
+  </wsdl:message>
+  <wsdl:message name="cTofSoapOut">
+    <wsdl:part name="parameters" element="tns:cTofResponse" />
+  </wsdl:message>
+  <wsdl:message name="cTokSoapIn">
+    <wsdl:part name="parameters" element="tns:cTok" />
+  </wsdl:message>
+  <wsdl:message name="cTokSoapOut">
+    <wsdl:part name="parameters" element="tns:cTokResponse" />
+  </wsdl:message>
+  <wsdl:message name="kTofSoapIn">
+    <wsdl:part name="parameters" element="tns:kTof" />
+  </wsdl:message>
+  <wsdl:message name="kTofSoapOut">
+    <wsdl:part name="parameters" element="tns:kTofResponse" />
+  </wsdl:message>
+  <wsdl:message name="kTocSoapIn">
+    <wsdl:part name="parameters" element="tns:kToc" />
+  </wsdl:message>
+  <wsdl:message name="kTocSoapOut">
+    <wsdl:part name="parameters" element="tns:kTocResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ConverterSoap">
+    <wsdl:operation name="fToc">
+      <wsdl:input message="tns:fTocSoapIn" />
+      <wsdl:output message="tns:fTocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fTok">
+      <wsdl:input message="tns:fTokSoapIn" />
+      <wsdl:output message="tns:fTokSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cTof">
+      <wsdl:input message="tns:cTofSoapIn" />
+      <wsdl:output message="tns:cTofSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="cTok">
+      <wsdl:input message="tns:cTokSoapIn" />
+      <wsdl:output message="tns:cTokSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="kTof">
+      <wsdl:input message="tns:kTofSoapIn" />
+      <wsdl:output message="tns:kTofSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="kToc">
+      <wsdl:input message="tns:kTocSoapIn" />
+      <wsdl:output message="tns:kTocSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ConverterSoap" type="tns:ConverterSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fToc">
+      <soap:operation soapAction="http://tempuri.org/fToc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fTok">
+      <soap:operation soapAction="http://tempuri.org/fTok" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cTof">
+      <soap:operation soapAction="http://tempuri.org/cTof" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cTok">
+      <soap:operation soapAction="http://tempuri.org/cTok" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kTof">
+      <soap:operation soapAction="http://tempuri.org/kTof" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kToc">
+      <soap:operation soapAction="http://tempuri.org/kToc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConverterSoap12" type="tns:ConverterSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fToc">
+      <soap12:operation soapAction="http://tempuri.org/fToc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fTok">
+      <soap12:operation soapAction="http://tempuri.org/fTok" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cTof">
+      <soap12:operation soapAction="http://tempuri.org/cTof" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cTok">
+      <soap12:operation soapAction="http://tempuri.org/cTok" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kTof">
+      <soap12:operation soapAction="http://tempuri.org/kTof" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kToc">
+      <soap12:operation soapAction="http://tempuri.org/kToc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Converter">
+    <wsdl:port name="ConverterSoap" binding="tns:ConverterSoap">
+      <soap:address location="http://localhost:1054/Converter.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ConverterSoap12" binding="tns:ConverterSoap12">
+      <soap12:address location="http://localhost:1054/Converter.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,5 @@
+C:\Users\YAS\Desktop\workspace\TemperatureConverter\TemperatureConverter\bin\TemperatureConverter.dll
+C:\Users\YAS\Desktop\workspace\TemperatureConverter\TemperatureConverter\bin\TemperatureConverter.pdb
+C:\Users\YAS\Desktop\workspace\TemperatureConverter\TemperatureConverter\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\YAS\Desktop\workspace\TemperatureConverter\TemperatureConverter\obj\Debug\TemperatureConverter.dll
+C:\Users\YAS\Desktop\workspace\TemperatureConverter\TemperatureConverter\obj\Debug\TemperatureConverter.pdb
